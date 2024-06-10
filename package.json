@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@prisma/client": "^5.15.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-validator": "^7.1.0"
+  },
+  "name": "ex-express-api-crud-auth",
+  "description": "Ciao Ragazzi,\r esercizio di oggi: ex-express-api-crud-auth\r Esercizio\r Partendo dall'esercizio di ieri, aggiungiamo l'autenticazione al nostro progetto! Create tutto il necessario (Model, Controller, rotte e validazioni) per implementare le due funzionalità principali:\r Creazione nuovo utente: rotta POST /auth/register\r Login utente: rotta POST /auth/login\r Proteggete, attraverso un middleware che verifichi il token JWT passato nell'header della richiesta, le rotte di creazione, modifica e cancellazione della risorsa Post.\r Aggiungete la policy CORS per consentire a qualunque dominio di accedere alle API (tanto siamo in locale :linguaccia_occhi_chiusi:).\r BONUS:\r Aggiungete una relazione one-to-many fra i modelli User e Post.\r Aggiungete un middleware che verifichi che un utente possa modificare o cancellare solo i Post a lui associati, altrimenti restituisca un errore 403.\r Buon lavoro!",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prisma": "^5.15.0"
+  }
+}
