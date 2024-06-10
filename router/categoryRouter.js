@@ -5,6 +5,8 @@ const validator = require('../middlewares/validator.js')
 const bodyData = require('../validations/category.js')
 const authenticateToken = require('../middlewares/auth.js')
 
+router.use(authenticateToken)
+
 router.post('/', validator(bodyData), create)
 
 router.get('/', index)
