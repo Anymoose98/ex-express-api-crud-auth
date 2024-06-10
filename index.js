@@ -2,6 +2,7 @@ const express = require("express");
 const postRouter = require("./router/postRouter");
 const tagRouter = require("./router/tagRouter");
 const categoryRouter = require("./router/categoryRouter");
+const authRouter = require("./router/auth.js")
 const app = express();
 
 require("dotenv").config();
@@ -12,6 +13,8 @@ app.get('/', (req, res) => {
 })
 
 app.use(express.json());
+
+app.use('',authRouter)
 
 app.use('/posts', postRouter);
 

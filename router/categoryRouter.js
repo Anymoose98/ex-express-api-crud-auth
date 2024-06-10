@@ -1,8 +1,9 @@
 const express = require("express");
 const router = express.Router();
-const { create, index, show, update, destroy } = require('../controllers/categorys.js');
+const { create, index, show, update, destroy } = require('../controllers/category.js');
 const validator = require('../middlewares/validator.js')
 const bodyData = require('../validations/category.js')
+const authenticateToken = require('../middlewares/auth.js')
 
 router.post('/', validator(bodyData), create)
 
